@@ -1,0 +1,281 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Бiблiотека</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="shop">
+    <meta name="keywords" content="shopcollege, shopcoll">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <div class="backgroundForm"></div>
+    <div class="max-width">
+        <header>
+            <div class="left">
+                <img src="img/logo.png" class="logo">
+            </div>
+            <div class="center">
+                <nav>
+                    <ul>
+                        <li><a href="">Книги</a></li>
+                        <li><a href="">Новини</a></li>
+                        <li><a href="">Каталоги</a></li>
+                        <li><a href="">Адреса</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <?php if (!$accountLog): ?>
+                <span class="btn btnLogin">Log In</span>
+                <span class="btn btnReg">Sign In</span>
+                <?php else: ?>
+                <span class="btn btnProfile">Profile</span>
+                <span class="btn btnExit" onclick="window.location.href = 'includes/logout.php'">Log Out</span>
+                <?php endif; ?>
+                <div class="btn-burger">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+            </div>
+        </header>
+        <section class="search">
+            <div class="left">
+                <h1>Швидкий пошук книжки:</h1>
+                <h2 class="areaAnim">Смiлянського промислово фахового колледжу</h2>
+                <input type="text" name="search" placeholder="Пошук книжки...">               
+            </div>
+            <div class="right">
+                <img src="img/book-logo.png">
+            </div>
+        </section>
+        <section class="news">
+            <h2>Новини:</h2>
+            <div class="area-posts">
+                <div class="post">
+                    <div class="photo">
+                        <img src="img/test.png" alt="photo post">
+                    </div>
+                    <div class="info">
+                        <span class="date">02.09.2005</span>
+                        <a href="#" class="name_post">Сьогоднi вiдбулась конференцiя за участью президента в бiблiотецi</a>
+                    </div>
+                </div>
+               <div class="post">
+                    <div class="photo">
+                        <img src="img/test.png" alt="photo post">
+                    </div>
+                    <div class="info">
+                        <span class="date">02.09.2005</span>
+                        <a href="#" class="name_post">Сьогоднi вiдбулась конференцiя за участью президента в бiблiотецi</a>
+                    </div>
+                </div>
+               <div class="post">
+                    <div class="photo">
+                        <img src="img/test.png" alt="photo post">
+                    </div>
+                    <div class="info">
+                        <span class="date">02.09.2005</span>
+                        <a href="#" class="name_post">Сьогоднi вiдбулась конференцiя за участью президента в бiблiотецi</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <h2>Знання це сила:</h2>
+            <div class="details">          
+                <div class="left">
+                    
+                    <p class="text-info">Сьогодні бібліотека - це найважливіший центр коледжу, який забезпечує бібліотечно-бібліографічне та інформаційне обслуговування навчального, наукового і виховного процесів ВНЗ.
+
+    Бібліотека на сьогоднішній день обслуговує понад 650 читачів: студентів, викладачів та працівників ВНЗ. В бібліотеці працює читальний зал та абонемент, на якому видаються книжки. А також створений у бібліотеці зал періодичних видань. Книжковий фонд бібліотеки на сьогодні становить понад 22000 примірників, який систематично поновлюється. Фонд бібліотеки багатогалузевий. Комплектується літературою з питань екології та охорони природи, математики, фізики, хімії, біології; обліку та аудиту, фінансів, банківської справи, менеджменту, маркетингу, радіоелектроніки, програмування, економічної теорії, історії, соціології, політології, філософії, етики та 
+    естетики, психології та педагогіки тощо. Щорічно в бібліотеку надходять десятки періодичних видань.</p>
+                </div>
+                <div class="right">
+                    <div class="container">
+                      <div id="carousel">
+                        <div class="item a"></div>
+                        <div class="item b"></div>
+                        <div class="item c"></div>
+                        <div class="item d"></div>
+                        <div class="item e"></div>
+                        <div class="item f"></div>
+                      </div>
+                    </div>                
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Menu -->
+
+    <div class="burger-menu">
+        <div class="btn-burger-close">
+            <span class="material-symbols-outlined">close</span>
+        </div>  
+        <div class="details-burgerMenu-btn">        
+            <div class="loginAccount">
+                <button class="btnLogin">Log In</button>
+            </div>
+            <div class="regAccount">
+                <button class="btnReg">Sign In<span class="material-symbols-outlined add">add</span></button>
+            </div>
+        </div>
+        <div class="section_categoies">
+            <nav>
+                <ul>
+                    <li><a href="">Книги</a></li>
+                    <li><a href="">Новини</a></li>
+                    <li><a href="">Каталоги</a></li>
+                    <li><a href="">Адреса</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="form-login"> 
+        <form action="#" class="formLog">
+            <div class="header">
+                <h2>Вхід</h2>
+                <span class="material-symbols-outlined" id="close-log">
+                close
+                </span>
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <div class="details-field">
+                        <input type="email" name="email" autocomplete="off">
+                        <label>Email</label>                        
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="details-field">
+                        <input type="text" name="password" autocomplete="off">
+                        <label>Password</label>                     
+                    </div>
+                </div>
+                <div class="field">
+                    <button class="login-user-btn">Вхід</button>
+                </div>
+
+                <p class="error-mess-log">.</p>
+                <div class="link-have-acc">
+                    <p class="openLoginForm">Ще не маєте аккаунту?</p>  
+                    <p class="link-p">Зареєструватись</p>
+                </div>
+            </div>      
+        </form>
+    </div>
+    
+    <div class="form-reg">
+        <form action="#" class="formReg">
+            <div class="header">
+                <h2>Реєстрація</h2>
+                <span class="material-symbols-outlined" id="close">
+                close
+                </span>
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <div class="details-field">
+                        <input type="text" id="phoneInput" name="nameUser" autocomplete="off" class="inp-number-up">
+                        <label>Login</label>                 
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="details-field">
+                        <input type="email" name="email" autocomplete="off">
+                        <label>Email</label>                        
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="details-field">
+                        <input type="text" name="password" autocomplete="off">
+                        <label>Password</label>                     
+                    </div>
+                </div>
+                <div class="field">
+                    <button class="registration-user-btn">Зареєструватись</button>
+                </div>
+
+                <p class="error-mess">.</p> 
+                <div class="link-have-acc">
+                    <p class="openLoginForm">Вже маєте аккаунт?</p> 
+                    <p class="link-p-login">Вхід</p>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let currdeg = 0;
+let carousel = document.getElementById("carousel");
+
+setInterval(() => {
+  currdeg = currdeg - 60;
+  carousel.style.transform = "rotateY("+currdeg+"deg)"; 
+}, 5000)
+let areaText = document.querySelector(".areaAnim");
+
+const textAnimation1 = "Смiлянського промислово фахового колледжу";
+const textAnimation2 = "Черкаського Державного Технологiчного Унiверситету";
+
+let queue = 0;
+let timer;
+let count = 0;
+let readyText = "";
+let readyResetText = ""
+
+function printText() {
+
+    const text = queue === 0 ? textAnimation1 : textAnimation2;
+
+    readyText = ""
+    count = 0;
+
+    timer = setInterval(() => {
+        readyText += text[count];
+        areaText.innerHTML = readyText;
+        count++;
+
+        if (count >= text.length) {
+            clearInterval(timer);
+            setTimeout(() => {
+                resetText();
+            }, 3000);
+        }
+    }, 30);
+}
+
+printText();
+
+function resetText()
+{
+    const text = queue === 0 ? textAnimation1 : textAnimation2;
+    readyResetText = ""
+    let deleteCount = text.length;
+    timer = setInterval(() => {
+        deleteCount--;
+        readyText = readyText.slice(0, deleteCount);
+        areaText.innerHTML = readyText;
+
+        if (deleteCount <= 0) {
+            clearInterval(timer);
+            queue = queue === 0 ? 1 : 0;
+            printText();
+        }
+    }, 30);
+}
+    </script>
+</body>
+</html>
